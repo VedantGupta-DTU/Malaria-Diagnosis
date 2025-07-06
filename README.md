@@ -13,8 +13,13 @@ A web-based application that uses AI to detect malaria infection from cell image
 ## Prerequisites
 
 - Python 3.7 or higher
-- Your trained Keras model (`my_model.keras copy`)
 - Cell images dataset in the `cell_images/` directory
+
+## Model Download
+
+**Download the trained model (224MB):**
+- **Google Drive**: [Download Model](https://drive.google.com/file/d/16imA9-VPF45hMTKflJqSZxotdUSwKJwO/view?usp=drive_link)
+- After downloading, rename the file to `my_model.keras copy` and place it in the root directory
 
 ## Installation
 
@@ -25,8 +30,9 @@ A web-based application that uses AI to detect malaria infection from cell image
    pip install -r requirements.txt
    ```
 
-3. **Ensure your model file is in the correct location**:
-   - The model file should be named `my_model.keras copy` and placed in the root directory
+3. **Download and place the model file**:
+   - Download the model from the link above
+   - Rename it to `my_model.keras copy` and place it in the root directory
    - Your cell images should be in the `cell_images/` directory with subdirectories:
      - `cell_images/Parasitized/` (for infected cells)
      - `cell_images/Uninfected/` (for healthy cells)

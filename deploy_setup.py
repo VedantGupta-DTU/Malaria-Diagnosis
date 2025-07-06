@@ -156,9 +156,11 @@ def main():
         gdrive_url = f"https://drive.google.com/uc?id={args.gdrive}"
         download_model_from_url(gdrive_url)
     elif args.download_model:
-        print("Please provide a URL or Google Drive file ID for the model")
-        print("Example: python deploy_setup.py --url <your-model-url>")
-        print("Example: python deploy_setup.py --gdrive <gdrive-file-id>")
+        # Default to the provided Google Drive link
+        gdrive_id = "16imA9-VPF45hMTKflJqSZxotdUSwKJwO"
+        gdrive_url = f"https://drive.google.com/uc?id={gdrive_id}"
+        print(f"Downloading model from Google Drive (ID: {gdrive_id})...")
+        download_model_from_url(gdrive_url)
 
 if __name__ == "__main__":
     main() 
