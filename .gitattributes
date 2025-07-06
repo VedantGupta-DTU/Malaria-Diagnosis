@@ -1,0 +1,4 @@
+*.keras filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*.pb filter=lfs diff=lfs merge=lfs -text
+my_model.keras* filter=lfs diff=lfs merge=lfs -text 
